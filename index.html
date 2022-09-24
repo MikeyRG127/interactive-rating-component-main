@@ -12,20 +12,97 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    
-    body{
-      min-height: 98vh;
-      background-color: white;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: auto;
+    * {
+      padding: 0rem;
+      margin: 0rem;
     }
 
-    section{
-      border: 1px black solid;
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      place-content: center;
+      background-color: hsl(225, 12%, 7%);
+
+    }
+
+    .rating-container {
       width: 400px;
       height: 400px;
+      display: grid;
+      background-image: linear-gradient(to top left, hsl(214, 35%, 9%), hsl(213, 14%, 15%));
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      border-radius: 1.5rem;
+
+    }
+
+    .one-container {
+      padding-left: 2rem;
+      padding-top: 2rem;
+
+    }
+
+    .one-container>.star-item {
+      background-color: hsl(220, 12%, 24%);
+      height: 2.5rem;
+      width: 2.5rem;
+      display: grid;
+      place-content: center;
+      border-radius: 50%;
+
+    }
+
+    .two-container {
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    .two-container>h2 {
+      color: hsl(240, 1%, 80%);
+    
+    }
+
+    .three-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .three-container>p {
+      color: hsl(240, 1%, 80%);
+    }
+
+    .four-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      display: grid;
+      place-content: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+    }
+
+    .number {
+      background-color: hsl(218, 13%, 17%);
+      height: 3rem;
+      width: 3rem;
+      display: grid;
+      place-content: center;
+      border-radius: 50%;
+      color: hsl(240, 1%, 80%);
+    }
+
+    .five-container {
+      display: grid;
+      justify-content: center;
+      padding-top: 0.8rem;
+    }
+
+    .five-container>button {
+      border: transparent;
+      border-radius: 2rem;
+      color: white;
+      background-color: hsl(25, 97%, 53%);
+      width: 20rem;
+      height: 2.5rem;
     }
   </style>
 </head>
@@ -35,55 +112,40 @@
 
 
 
-  <section>
+  <main class="rating-container">
 
 
-    <picture>
-      <img src="/images/icon-star.svg" alt="Star">
-    </picture>
-
-    <h1>How did we do?</h1>
-
-
-    <p>Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!</p>
+    <section class="one-container">
+      <picture class="star-item">
+        <img src="/images/icon-star.svg" alt="Star">
+      </picture>
+    </section>
 
 
-    <a>1</a>
-    <a>2</a>
-    <a>3</a>
-    <a>4</a>
-    <a>5</a>
+    <section class="two-container">
+      <h2>How did we do?</h2>
+    </section>
 
 
-    <button>SUBMIT</button>
+    <section class="three-container">
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+    </section>
 
+    <section class="four-container">
+      <a class="number">1</a>
+      <a class="number">2</a>
+      <a class="number">3</a>
+      <a class="number">4</a>
+      <a class="number">5</a>
+    </section>
 
-  </section>
+    <section class="five-container">
+      <button>SUBMIT</button>
+    </section>
 
-  <!-- Rating state start -->
+  </main>
 
-
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected
-  <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
 
 
 
