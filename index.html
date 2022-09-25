@@ -2,146 +2,24 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    * {
-      padding: 0rem;
-      margin: 0rem;
-    }
-
-    @font-face {
-      font-family: Overpass;
-      src: url(fonts/Overpass-VariableFont_wght.ttf);
-    }
-
-    body {
-      height: 100vh;
-      width: 100vw;
-      display: grid;
-      place-content: center;
-      background-color: hsl(225, 12%, 7%);
-
-    }
-
-    .rating-container {
-      width: 400px;
-      height: 400px;
-      display: grid;
-      background-image: linear-gradient(to top left, hsl(214, 35%, 9%), hsl(213, 14%, 15%));
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      border-radius: 1.5rem;
-
-    }
-
-    .one-container {
-      padding-left: 2rem;
-      padding-top: 2rem;
-
-    }
-
-    .one-container>.star-item {
-      background-color: hsl(220, 12%, 24%);
-      height: 2.5rem;
-      width: 2.5rem;
-      display: grid;
-      place-content: center;
-      border-radius: 50%;
-
-    }
-
-    .two-container {
-      padding-left: 2rem;
-      padding-top: 2rem;
-    }
-
-    .two-container>h2 {
-      color: hsl(240, 1%, 80%);
-      font-family: Overpass;
-      font-size: 1.5rem;
-    }
-
-    .three-container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    .three-container>p {
-      color: hsl(240, 1%, 80%);
-      font-family: Overpass;
-      font-size: 0.9rem;
-    }
-
-    .four-container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      display: grid;
-      place-content: center;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      justify-items: center;
-    }
-
-    .number {
-      background-color: hsl(218, 13%, 17%);
-      height: 3rem;
-      width: 3rem;
-      display: grid;
-      place-content: center;
-      border-radius: 50%;
-      color: hsl(240, 1%, 80%);
-      font-family: Overpass;
-      font-size: 1rem;
-    }
-
-    .number:hover {
-      background-color: hsl(25, 97%, 53%);
-    }
-
-    .five-container {
-      display: grid;
-      justify-content: center;
-      padding-top: 0.8rem;
-    }
-
-    .five-container>button {
-      border: transparent;
-      border-radius: 2rem;
-      color: white;
-      background-color: hsl(25, 97%, 53%);
-      width: 20rem;
-      height: 2.5rem;
-      font-family: Overpass;
-      font-size: 1.1rem;
-    }
-
-    .five-container>button:hover {
-      color: hsl(25, 97%, 53%);
-      background-color: hsl(0, 0%, 100%);
-    }
-
-    @media only screen and (max-width:925px) {
-      .rating-container {
-        width: 400px;
-        height: 400px;
-      }
-
-    }
-  </style>
 </head>
+
+
+
+<!--BODY--------------------------------------------------------->
 
 <body>
 
 
-
-
-  <main class="rating-container">
+  <!--RATING CONTAINER--------------------------------------------->
+  <section class="rating-container">
 
 
     <section class="one-container">
@@ -162,22 +40,74 @@
     </section>
 
     <section class="four-container">
-      <a class="number">1</a>
-      <a class="number">2</a>
-      <a class="number">3</a>
-      <a class="number">4</a>
-      <a class="number">5</a>
+      <button class="number" onclick="getting(0)">1</button>
+      <button class="number" onclick="getting(1)">2</button>
+      <button class="number" onclick="getting(2)">3</button>
+      <button class="number" onclick="getting(3)">4</button>
+      <button class="number" onclick="getting(4)">5</button>
     </section>
 
     <section class="five-container">
-      <button>SUBMIT</button>
+      <button onclick="rating()">SUBMIT</button>
     </section>
 
-  </main>
+  </section>
+  <!--RATING CONTAINER ENDING-------------------------------------->
+
+
+
+
+  <!--THANK YOU CONTAINER------------------------------------------>
+  <section class="thank-you">
+
+
+    <section class="thank-you-one-container">
+
+      <picture class="star-item">
+        <img src="/images/illustration-thank-you.svg" alt="thank you image">
+      </picture>
+
+    </section>
+
+
+    <section class="thank-you-two-container">
+
+      <h2></h2>
+
+    </section>
+
+
+    <section class="thank-you-three-container">
+
+      <h2>Thank you!</h2>
+
+
+    </section>
+
+
+    <section class="thank-you-four-container">
+
+      <p>We appreciate you taking the time to give
+        a rating. If you ever need more support, don't
+        hesitate to get in touch. </p>
+
+    </section>
+
+
+  </section>
+  <!--THANK YOU CONTAINER ENDING----------------------------------->
+
+
+
+  <!--JS CODE------------------------------------------------------>
+  <script src="code.js"></script>
+  <!--JS CODE ENDING----------------------------------------------->
+
 
 
 
 
 </body>
+<!---BODY ENDING------------------------------------------------->
 
 </html>

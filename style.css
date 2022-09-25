@@ -1,0 +1,197 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+@font-face {
+    font-family: Overpass;
+    src: url(fonts/Overpass-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    background-color: hsl(225, 12%, 7%);
+
+}
+
+.rating-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    background-image: linear-gradient(to top left, hsl(214, 35%, 9%), hsl(213, 14%, 15%));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 1.5rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.one-container {
+    padding-left: 2rem;
+    padding-top: 2rem;
+
+}
+
+.one-container>.star-item {
+    background-color: hsl(220, 12%, 24%);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.two-container {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.two-container>h2 {
+    color: hsl(240, 1%, 80%);
+    font-family: Overpass;
+    font-size: 1.5rem;
+}
+
+.three-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.three-container>p {
+    color: hsl(240, 1%, 80%);
+    font-family: Overpass;
+    font-size: 0.9rem;
+}
+
+.four-container {
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.number {
+    background-color: hsl(218, 13%, 17%);
+    height: 3rem;
+    width: 3rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    color: hsl(240, 1%, 80%);
+    font-family: Overpass;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: transparent
+}
+
+.number:hover {
+    background-color: hsl(25, 97%, 53%);
+
+}
+
+.number:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.five-container {
+    display: grid;
+    justify-content: center;
+    padding-top: 0.8rem;
+}
+
+.five-container>button {
+    border: transparent;
+    border-radius: 2rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    width: 20rem;
+    height: 2.5rem;
+    font-family: Overpass;
+    font-size: 1.1rem;
+
+}
+
+.five-container>button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.thank-you {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    background-image: linear-gradient(to top left, hsl(214, 35%, 9%), hsl(213, 14%, 15%));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 1.5rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: none;
+}
+
+.thank-you-one-container {
+    display: grid;
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.thank-you-two-container {
+    display: grid;
+    place-content: center;
+
+
+}
+
+.thank-you-two-container>h2 {
+
+    background-color: hsl(213, 19%, 18%);
+    border: 0.7rem hsl(213, 19%, 18%) solid;
+    border-radius: 10rem;
+    font-size: 0.8rem;
+    color: hsl(25, 97%, 53%);
+    font-family: Overpass;
+    font-weight: 100;
+}
+
+.thank-you-three-container {
+    color: white;
+    display: grid;
+    justify-items: center;
+    font-family: Overpass;
+    padding-top: 2rem;
+}
+
+.thank-you-four-container {
+    color: white;
+    display: grid;
+    justify-items: center;
+    font-family: Overpass;
+    grid-row: 4/5;
+
+}
+
+.thank-you-four-container>p {
+    padding-top: 1rem;
+    width: 22rem;
+    text-align: center;
+}
+
+@media only screen and (max-width:925px) {
+    .rating-container {
+        width: 400px;
+        height: 400px;
+    }
+
+}
