@@ -27,7 +27,7 @@ MOBILE
 ### Links
 
 - Solution URL: [GITHUB REPOSITORY](https://github.com/MikeyRG127/interactive-rating-component-main)
-- Live Site URL: [LIVE SITE](https://3-columm-preview-card-kbs2.vercel.app/)
+- Live Site URL: [LIVE SITE](https://interactive-rating-component-main-k7yn.vercel.app/)
 
 ### Built with
 
